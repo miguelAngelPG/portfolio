@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Aileron Black';
+  src: url('../assets/fonts/Aileron-Black.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url('../assets/fonts/Aileron-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Heavy';
+  src: url('../assets/fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Light';
+  src: url('../assets/fonts/Aileron-Light.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Regular';
+  src: url('../assets/fonts/Aileron-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Thin';
+  src: url('../assets/fonts/Aileron-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Aileron Ultra Light';
+  src: url('../assets/fonts/Aileron-UltraLight.otf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
