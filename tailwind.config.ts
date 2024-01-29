@@ -28,7 +28,7 @@ const config: Config = {
       },
       animation: {
         slideInTop: 'slideInTop 1s ease-in-out 0.5s forwards',
-        slideOutBottom: 'slideOutBottom 1s ease-in-out',
+        slideOutBottom: 'slideOutBottom 1s ease-in-out forwards',
         slideInLeft: 'slideInLeft 1s ease-in-out 1s forwards',
         slideOutRight: 'slideOutRight 1s ease-in-out forwards',
         fadeIn: 'fadeIn 1s ease-in-out .5s forwards',

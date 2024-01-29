@@ -5,7 +5,7 @@
 import { ThemeProvider } from 'next-themes'
 import { LegacyRef, RefObject, createContext, createRef, use, useRef } from 'react'
 
-export const Context = createContext<LegacyRef<HTMLElement> | null>(null)
+export const Context = createContext<LegacyRef<HTMLHeadingElement> | null>(null)
   
 export const Provider = ({ children }: { children: React.ReactNode }) => {
     const elementRef = useRef<HTMLDivElement | null>(null)
