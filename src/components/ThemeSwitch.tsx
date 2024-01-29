@@ -1,6 +1,7 @@
 'use client'
 
-import { FiSun, FiMoon, FiLoader } from "react-icons/fi"
+import { FiLoader } from "react-icons/fi"
+import { IoSunny, IoMoon } from "react-icons/io5";
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import Image from "next/image"
@@ -25,11 +26,11 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <FiSun onClick={() => setTheme('light')} />
+    return <IoSunny className="w-6 h-6" onClick={() => setTheme('light')} />
   }
 
   if (resolvedTheme === 'light') {
-    return <FiMoon onClick={() => setTheme('dark')} />
+    return <IoMoon className="w-5 h-5" onClick={() => setTheme('dark')} />
   }
 
 }
