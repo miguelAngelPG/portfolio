@@ -2,11 +2,10 @@
 
 import ThemeSwitch from "./ThemeSwitch"
 import avatar from '@/assets/imgs/avatar.png'
-import avatarLetter from '@/assets/imgs/M2.png'
+import avatarLetter from '@/assets/imgs/M3.png'
 import { useContext, useEffect, useState } from 'react'
 import { Context } from '@/context/Provider'
 import { AvatarImage } from './AvatarImage'
-import { AvatarContainer } from "./AvatarContainer"
 
 export const Header = () => {
     const [state, setState] = useState({

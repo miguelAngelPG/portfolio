@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import "./globals.css"
 
-import Favicon from './avatar.png'
+import Favicon from './logo.png'
 import { Provider } from "@/context/Provider";
 
 export const metadata: Metadata = {
