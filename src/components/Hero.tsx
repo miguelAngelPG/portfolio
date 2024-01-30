@@ -4,6 +4,7 @@ import { Context } from "@/context/Provider"
 import { AvatarImage } from "./AvatarImage"
 import avatar from '@/assets/imgs/avatar.png'
 import { useContext } from "react"
+import { AvatarContainer } from "./AvatarContainer"
 
 export const Hero = () => {
 
@@ -11,14 +12,13 @@ export const Hero = () => {
 
     return (
         <section className="flex flex-col sm:flex-row items-center gap-5">
-            <div className="relative w-44 h-44 bg-indigo-100 dark:bg-gray-700/60 border-8 duration-1000 border-white dark:border-gray-900/80 shadow-lg rounded-full overflow-hidden">
-                <span style={{ boxSizing: 'border-box', display: 'block', overflow: 'hidden', width: 'initial', height: 'initial', background: 'none', opacity: 1, border: 0, margin: 0, padding: 0, position: 'absolute', top: 0, left: 0, bottom: 0, right: 0}}>
-                    <AvatarImage avatarImg={avatar} toAction={true} animation={''}/>
-                </span>
-            </div>
+            <AvatarContainer>
+                <AvatarImage avatarImg={avatar} toAction={true} animation={''}/>
+            </AvatarContainer>
             <div className="flex flex-col items-center sm:items-start gap-3">
                 <div className="flex flex-col items-left gap-2">
-                    <h1 ref={elementRef} className="text-2xl sm:text-4xl text-center sm:text-left font-AileronBold text-slate-600 dark:text-slate-100">Miguel Pacheco</h1>
+                    <h1 ref={elementRef} className="text-2xl sm:text-4xl text-center sm:text-left font-AileronBold text-slate-600 dark:text-slate-100">Miguel Angel</h1>
+                    <h1 className="text-2xl sm:text-4xl text-center sm:text-left font-AileronBold text-slate-600 dark:text-slate-100">Pacheco Granillo</h1>
                     <p className="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl">Im a passionate web development and design UI/UX.</p>
                 </div>
             <div className="flex gap-3">

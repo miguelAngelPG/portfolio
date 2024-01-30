@@ -25,6 +25,8 @@ const config: Config = {
       colors: {
         'blue-light': '#cbe0e5',
         'blue-dark': '#051114',
+        'blue-gray-light': '#92CBD8',
+        'blue-gray-dark': '#1B4E5A',
       },
       animation: {
         slideInTop: 'slideInTop 1s ease-in-out 0.5s forwards',

@@ -1,18 +1,12 @@
-import ThemeSwitch from "@/components/ThemeSwitch"
-import Avatar from "@/components/Avatar"
-import { Context } from "@/context/Provider"
-import { useContext } from 'react'
 import { Hero } from "@/components/Hero"
+import { Header } from "@/components/Header"
 
 export default function Home() {
 
   return (
     <div className=" bg-blue-light dark:bg-blue-dark duration-1000">
-      <div className="sticky w-full top-0 z-10 backdrop-blur-sm">
-        <header className="flex flex-row items-center px-5 py-2 justify-between w-full max-w-4xl">
-          <Avatar/>
-          <ThemeSwitch/>
-        </header>
+      <div className="sticky w-full top-0 z-10 backdrop-blur-md">
+        <Header/>
       </div>
       <div className="mx-auto max-w-3xl px-5 mb-5 flex flex-col gap-10">
         <main className="flex flex-col gap-16">
