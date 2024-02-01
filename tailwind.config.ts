@@ -35,6 +35,8 @@ const config: Config = {
         slideOutRight: 'slideOutRight 1s ease-in-out forwards',
         fadeIn: 'fadeIn 1s ease-in-out .5s forwards',
         fadeOut: 'fadeOut 1s ease-in-out forwards',
+        fadeInLanguge: 'fadeIn 0.5s ease-in-out forwards',
+        fadeOutLanguge: 'fadeOut 0.5s ease-in-out forwards',
       },
       keyframes: {
         slideInTop: {

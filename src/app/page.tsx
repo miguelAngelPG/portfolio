@@ -11,6 +11,7 @@ export default function Home() {
       <div className="mx-auto max-w-3xl px-5 mb-5 flex flex-col gap-10">
         <main className="flex flex-col gap-16">
           <Hero/>
+          <hr className="border-gray-300 dark:border-gray-700"/>
           <section className="h-96"></section>
           <section className="h-96"></section>
           <section className="h-96"></section>
