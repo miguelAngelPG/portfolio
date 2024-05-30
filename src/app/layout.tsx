@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import "./globals.css"
 
 import Favicon from './logo.png'
-import { Provider } from "@/context/Provider";
+import { AppContextProvider } from "@/context/Provider";
 
 export const metadata: Metadata = {
   title: "Miguel's portfolio",
@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Provider>
+        <AppContextProvider>
           {children}
-        </Provider>
+        </AppContextProvider>
       </body>
     </html>
   );
