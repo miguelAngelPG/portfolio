@@ -23,7 +23,8 @@ const config: Config = {
         AileronLight: ["Aileron Light", "sans-serif"],
       },
       colors: {
-        'blue-light': '#cbe0e5',
+        'blue-main': '#00ABF0',
+        'blue-light': '#F6FDFF',
         'blue-dark': '#051114',
         'blue-gray-light': '#92CBD8',
         'blue-gray-dark': '#1B4E5A',
@@ -40,7 +41,8 @@ const config: Config = {
       },
       keyframes: {
         slideInTop: {
-          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '0%': { transform: 'translateY(100%)' },
+          '50%': { transform: 'translateY(80%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' }
         },
         slideInLeft: {
@@ -53,6 +55,7 @@ const config: Config = {
         },
         slideOutBottom: {
           '0%': { transform: 'translateY(0)', opacity: '1' },
+          '25%': { opacity: '0' },
           '100%': { transform: 'translateY(100%)', opacity: '0' }
         },
         fadeIn: {
