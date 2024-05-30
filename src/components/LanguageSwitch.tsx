@@ -1,27 +1,31 @@
-import { useState } from 'react';
+'use client'
+
+import { changeLanguage } from '@/context/Actions';
+import { AppContext } from '@/context/Provider';
+import { useContext, useState } from 'react';
 import { FiGlobe } from 'react-icons/fi';
 
 export const LanguageSwitch = () => {
-    const [isHovered, setIsHovered] = useState(false)
-    const [language, setLanguage] = useState('EN')
 
+    const { state, dispatch } = useContext(AppContext)
+    const { language } = state
+
+    const [isHovered, setIsHovered] = useState(false)
+    // const [language, setLanguage] = useState('EN')
+    // const state = useContext(Context);
     const handleLanguageChange = () => {
-        setLanguage(prevLanguage => prevLanguage === 'EN' ? 'ES' : 'EN');
+        changeLanguage(dispatch, language === 'ES' ? 'EN' : 'ES');
     };
 
     return (
         <button
-            className='flex items-center min-h-10 justify-center text-sm gap-3 bg-emerald-200 dark:bg-emerald-500 hover:bg-opacity-80 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2 px-4 font-semibold rounded'
-            // className={`flex items-center justify-center py-2 px-4 rounded transition-colors ${
-            //     isHovered ? 'bg-emerald-200' : 'bg-emerald-200'
-            // }`}
+            className='flex items-center min-h-10 justify-center text-sm gap-3 bg-emerald-200 dark:bg-emerald-500 hover:bg-opacity-80 hover:dark:bg-opacity-90 text-slate-900 dark:text-indigo-100 py-2 px-4 font-AileronBold rounded-lg duration-100'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => handleLanguageChange()}
-            // style={{ width: '100px', height: '100px' }}
         >
             <FiGlobe className={`leading-none text-xl ${ isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`} />
-            <span className={`text-lg leading-none absolute ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{language}</span>
+            <span className={`text-lg leading-none absolute font-semibold ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{language}</span>
         </button>
 
     );
