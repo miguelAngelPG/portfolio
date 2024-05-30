@@ -3,8 +3,8 @@
 import ThemeSwitch from './ThemeSwitch'
 import avatar from '@/assets/imgs/avatar.png'
 import avatarLetter from '@/assets/imgs/M3.png'
-import { useContext, useEffect, useState } from 'react'
-import { Context } from '@/context/Provider'
+import { RefObject, useContext, useEffect, useState } from 'react'
+import { AppContext } from '@/context/Provider'
 import { AvatarImage } from './AvatarImage'
 
 export const Header = () => {
@@ -15,23 +15,27 @@ export const Header = () => {
     })
 
     const { toAction, animacionFade, animacionSlide } = state
-    const elementRef: any = useContext(Context)
+    // const { elementRef } : IState = useContext(Context)
+    const { state: stateG, dispatch } = useContext(AppContext)
+    console.log(stateG)
+    const { elementRef } = stateG
 
     useEffect(() => {
         const cambiarImagenConScroll = () => {
+
             const rect = elementRef?.current?.getBoundingClientRect()
-            console.log(rect?.top)
-            if (rect?.top <= 0 && toAction === false) {
+            
+            if (rect && rect.top <= 0 && toAction === false) {
                 setState({
                     toAction: true,
                     animacionFade: 'animate-fadeOut',
-                    animacionSlide: 'animate-slideInTop'
+                    animacionSlide: 'animate-fadeIn'
                 })
-            }else if(rect?.top >= 0 && toAction === true){
+            }else if(rect && rect?.top >= 0 && toAction === true){
                 setState({
                     toAction: false,
                     animacionFade: 'animate-fadeIn',
-                    animacionSlide: 'animate-slideOutBottom'
+                    animacionSlide: 'animate-fadeOut'
                 })
             }
           }

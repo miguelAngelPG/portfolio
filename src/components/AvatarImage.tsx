@@ -2,7 +2,7 @@ import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
 export const AvatarImage = ({avatarImg, toAction, animation}: { avatarImg: StaticImageData, toAction: boolean, animation: string}) => {
-    console.log(avatarImg.src)
+
     return (
         <Image
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
