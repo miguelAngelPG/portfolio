@@ -1,6 +1,7 @@
 // //haz un componente de conxtext con su provider
 'use client'
 
+import { ThemeProvider } from "next-themes"
 import { FunctionComponent, ReactNode, RefObject, createContext, useReducer } from "react"
 
 
@@ -140,7 +141,12 @@ const AppContextProvider: FunctionComponent<{ children: ReactNode }> = ({ childr
     )
     const value = { state, dispatch }
     
-    return <AppContext.Provider value={value}>{children}</AppContext.Provider>
+    return (
+        <AppContext.Provider value={value}>
+            <ThemeProvider attribute="class" defaultTheme='system' enableSystem>
+                {children}
+            </ThemeProvider>
+        </AppContext.Provider>)
 }
 
 export { AppContext, AppContextProvider }
