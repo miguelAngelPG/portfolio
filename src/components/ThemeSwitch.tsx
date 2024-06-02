@@ -16,11 +16,11 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <IoSunny className='w-6 h-6' onClick={() => setTheme('light')} />
+    return <IoSunny className='w-6 h-6 cursor-pointer' onClick={() => setTheme('light')} />
   }
 
   if (resolvedTheme === 'light') {
-    return <IoMoon className='w-5 h-5' onClick={() => setTheme('dark')} />
+    return <IoMoon className='w-5 h-5 cursor-pointer' onClick={() => setTheme('dark')} />
   }
 
 }
