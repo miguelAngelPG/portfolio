@@ -17,7 +17,7 @@ export const Header = () => {
     const { toAction, animacionFade, animacionSlide } = state
     // const { elementRef } : IState = useContext(Context)
     const { state: stateG, dispatch } = useContext(AppContext)
-    console.log(stateG)
+
     const { elementRef } = stateG
 
     useEffect(() => {

@@ -1,21 +1,14 @@
 'use client'
 
-import { changeLanguage } from '@/context/Actions';
-import { AppContext } from '@/context/Provider';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { FiGlobe } from 'react-icons/fi';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export const LanguageSwitch = () => {
 
-    const { state, dispatch } = useContext(AppContext)
-    const { language } = state
+    const [_, lang, handleLanguageChange] = useLanguage();
 
     const [isHovered, setIsHovered] = useState(false)
-    // const [language, setLanguage] = useState('EN')
-    // const state = useContext(Context);
-    const handleLanguageChange = () => {
-        changeLanguage(dispatch, language === 'ES' ? 'EN' : 'ES');
-    };
 
     return (
         <button
@@ -25,7 +18,7 @@ export const LanguageSwitch = () => {
             onClick={() => handleLanguageChange()}
         >
             <FiGlobe className={`leading-none text-xl ${ isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`} />
-            <span className={`text-lg leading-none absolute font-semibold ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{language}</span>
+            <span className={`text-lg leading-none absolute font-semibold ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{lang}</span>
         </button>
 
     );
