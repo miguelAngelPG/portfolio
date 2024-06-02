@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero"
 import { Header } from "@/components/Header"
+import { Experience } from "@/components/Experience";
 
 export default function Home() {
 
@@ -12,9 +13,12 @@ export default function Home() {
         <main className="flex flex-col gap-16 pt-5">
           <Hero/>
           <hr className="border-gray-300 dark:border-gray-700"/>
+          <Experience/>
           <section className="h-96"></section>
           <section className="h-96"></section>
           <section className="h-96"></section>
+          <section className="h-96">
+          </section>
         </main>
       </div>
       {/* <main className="flex min-h-screen flex-col items-center justify-between bg-blue-light transition-colors duration-1000 dark:bg-blue-dark">

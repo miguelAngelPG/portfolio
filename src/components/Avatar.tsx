@@ -3,7 +3,7 @@
 import avatar from '@/assets/imgs/avatar.png'
 import avatarLetter from '@/assets/imgs/M.png'
 import { useContext, useEffect, useState } from 'react'
-import { Context } from '@/context/Provider'
+import { AppContext } from '@/context/Provider'
 import { AvatarImage } from './AvatarImage'
 import { AvatarContainer } from './AvatarContainer'
 
@@ -15,7 +15,7 @@ export default function Avatar() {
     })
 
     const { toAction, animacionFade, animacionSlide } = state
-    const elementRef: any = useContext(Context)
+    const elementRef: any = useContext(AppContext)
 
     useEffect(() => {
         const cambiarImagenConScroll = () => {
