@@ -38,8 +38,18 @@ const config: Config = {
         fadeOut: 'fadeOut 1s ease-in-out forwards',
         fadeInLanguge: 'fadeIn 0.5s ease-in-out forwards',
         fadeOutLanguge: 'fadeOut 0.5s ease-in-out forwards',
+        accordionOpen: 'accordionOpen 0.5s ease-in-out forwards',
+        accordionClose: 'accordionClose 0.5s ease-in-out forwards',
       },
       keyframes: {
+        accordionOpen: {
+          '0%': { height: '0px', },
+          '100%': { height: '100px' }
+        },
+        accordionClose: {
+          '0%': { height: '100px' },
+          '100%': { height: '0px' }
+        },
         slideInTop: {
           '0%': { transform: 'translateY(100%)' },
           '50%': { transform: 'translateY(80%)', opacity: '0' },
