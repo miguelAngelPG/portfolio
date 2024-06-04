@@ -9,7 +9,7 @@ import { useContext, useState } from 'react';
 
 type Language = 'ES' | 'EN';
 
-export const useLanguage = (): [ILanguage, Language, () => void] => {
+export const useLanguage = (): {lang: ILanguage, language: Language, handleLanguageChange: () => void, isSpanish: boolean} => {
     const { state: { language }, dispatch } = useContext(AppContext)
 
     const lang = language === 'ES' ? es : en
@@ -18,6 +18,8 @@ export const useLanguage = (): [ILanguage, Language, () => void] => {
         changeLanguage(dispatch, language === 'ES' ? 'EN' : 'ES');
     };
     
-    return [lang, language as Language, handleLanguageChange];
+    const isSpanish = language === 'ES';
+
+    return {lang, language: language as Language, handleLanguageChange, isSpanish};
 };
 
