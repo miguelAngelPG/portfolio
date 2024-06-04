@@ -9,7 +9,7 @@ export const Introduce = () => {
 
     const { state: {elementRef}, dispatch } = useContext(AppContext)
     
-    const [lang] = useLanguage()
+    const { lang } = useLanguage()
 
     const element = useRef<HTMLHeadingElement>(elementRef?.current ?? null)
     

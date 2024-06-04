@@ -6,7 +6,7 @@ import { useLanguage } from '../../hooks/useLanguage';
 
 export const LanguageSwitch = () => {
 
-    const [_, lang, handleLanguageChange] = useLanguage();
+    const { language, handleLanguageChange } = useLanguage();
 
     const [isHovered, setIsHovered] = useState(false)
 
@@ -18,7 +18,7 @@ export const LanguageSwitch = () => {
             onClick={() => handleLanguageChange()}
         >
             <FiGlobe className={`leading-none text-xl ${ isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`} />
-            <span className={`text-lg leading-none absolute font-semibold ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{lang}</span>
+            <span className={`text-lg leading-none absolute font-semibold ${ !isHovered ? 'animate-fadeOutLanguge' : 'animate-fadeInLanguge'}`}>{language}</span>
         </button>
 
     );
