@@ -4,9 +4,10 @@ export interface ILanguage {
 }
 
 export interface IExperience {
-    startDate: number;
-    endDate: number;
+    startDate: Date;
+    endDate: Date;
     jobPosition: string;
     company: string;
+    link: string;
     description: string[];
 }
