@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero"
 import { Header } from "@/components/Header"
-import { Experience } from "@/components/Experience";
+import { ExperienceSection } from "@/components/ExperienceSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
 
 export default function Home() {
 
@@ -13,7 +14,8 @@ export default function Home() {
         <main className="flex flex-col gap-16 pt-5">
           <Hero/>
           <hr className="border-gray-300 dark:border-gray-700"/>
-          <Experience/>
+          <ExperienceSection/>
+          <ProjectsSection/>
           <section className="h-96"></section>
           <section className="h-96"></section>
           <section className="h-96"></section>

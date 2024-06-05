@@ -6,7 +6,7 @@ import { IExperience } from '@/types';
 import { TitleSection } from './TitleSection';
 import { AppContext } from '@/context/Provider';
 
-export const Experience = () => {
+export const ExperienceSection = () => {
     
     const { lang, isSpanish } = useLanguage();
     const { state: stateG, dispatch } = useContext(AppContext)
