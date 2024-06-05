@@ -1,6 +1,15 @@
 export interface ILanguage {
-    slogan: string;
-    experiences: IExperience[];
+    tooltipTheme: string;
+    hero: {
+        introduce: string;
+        tooltipLanguages: string;
+        tooltipResume: string;
+    }
+    experience: {
+        titleExperience: string;
+        experiences: IExperience[];
+        button: string;
+    }
 }
 
 export interface IExperience {
