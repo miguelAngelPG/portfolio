@@ -5,7 +5,6 @@ import { DownloadResume } from './DownloadResume'
 import { Introduce } from './Introduce'
 
 import avatar from '@/assets/imgs/avatar.png'
-import { Tooltip } from './Tooltip'
 
 export const Hero = () => {
 
@@ -19,11 +18,9 @@ export const Hero = () => {
                 <div className='flex gap-3'>
                     <div className='relative group/tooltip'>
                         <LanguageSwitch/>
-                        <Tooltip text='Switch languge'/>
                     </div>
                     <div className='relative group/tooltip'>
                         <DownloadResume/>
-                        <Tooltip text='The resume&apos;ll be downloaded in the current lang. '/>
                     </div>
                 </div>
             </div>

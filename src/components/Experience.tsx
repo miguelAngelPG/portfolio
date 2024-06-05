@@ -3,6 +3,7 @@
 import React, { useRef, useState } from 'react'
 import { useLanguage } from '@/hooks/useLanguage';
 import { IExperience } from '@/types';
+import { TitleSection } from './TitleSection';
 
 export const Experience = () => {
     
@@ -19,13 +20,14 @@ export const Experience = () => {
     return (
 
         <section className={`flex items-center justify-center flex-col`}>
+            <TitleSection title={lang.experience.titleExperience} />
             <ol className={`relative border-s border-gray-400 dark:border-gray-700`}>
-                <TimelineItem experience={lang.experiences[0]} isSpanish={isSpanish}/>
+                <TimelineItem experience={lang.experience.experiences[0]} isSpanish={isSpanish}/>
                 <div className='overflow-y-hidden transition-all duration-1000 w-full mb-5' style={{ height: active ? ref.current?.offsetHeight : 0, opacity: active ? 1 : 0 }}>
                     {
                         <div className='' ref={ref}>
                             {
-                                Array.from(lang.experiences).slice(1).map((experience) => (
+                                Array.from(lang.experience.experiences).slice(1).map((experience) => (
                                     <TimelineItem experience={experience} key={experience.company} isSpanish={isSpanish}/>
                                 ))
                             }
@@ -33,8 +35,8 @@ export const Experience = () => {
                     }
                 </div>
             </ol> 
-            <button className='z-10' onClick={toggleAccordion}>
-                Ver más
+            <button className='z-10 focus:no-underline' onClick={toggleAccordion}>
+                {lang.experience.button} {active ? '▲' : '▼'}
             </button>
         </section>
 

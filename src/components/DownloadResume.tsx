@@ -1,6 +1,14 @@
 'use client'
 
+import { GrDocumentDownload } from "react-icons/gr";
+import { ButtonHover } from "./ButtonHover";
+import { useLanguage } from "@/hooks/useLanguage";
+import { Tooltip } from "./Tooltip";
+
 export const DownloadResume = () => {
+
+    const { lang } = useLanguage();
+
     const handleDownload = () => {
         const fileUrl = "/pdf/MiguelPachecoCV.pdf";
         const link = document.createElement("a");
@@ -10,11 +18,9 @@ export const DownloadResume = () => {
     }
 
     return (
-        <button
-            className="flex items-center text-sm gap-3 min-h-10 bg-sky-200 hover:bg-opacity-80 dark:bg-sky-500 hover:dark:bg-opacity-90 text-slate-900 dark:text-indigo-100 py-2 px-4 rounded-lg font-semibold duration-100"
-            onClick={handleDownload}
-        >
-            Resume
-        </button>
+        <>
+            <ButtonHover text="Resume" handleClick={handleDownload} Icon={GrDocumentDownload} className="bg-sky-200 dark:bg-sky-500" isVisibleIcon={true}/>
+            <Tooltip text={ lang.hero.tooltipResume } />
+        </>
     )
 }
