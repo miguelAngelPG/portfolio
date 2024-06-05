@@ -1,17 +1,23 @@
 'use client'
 
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { useLanguage } from '@/hooks/useLanguage';
 import { IExperience } from '@/types';
 import { TitleSection } from './TitleSection';
+import { AppContext } from '@/context/Provider';
 
 export const Experience = () => {
     
     const { lang, isSpanish } = useLanguage();
+    const { state: stateG, dispatch } = useContext(AppContext)
+    const { elementRef } = stateG
 
     const [active, setActive] = useState(false);
 
     const toggleAccordion = () => {
+        if (active === true) {
+            elementRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'end', });
+        }
         setActive((prev) => !prev);
     };
 
@@ -36,7 +42,7 @@ export const Experience = () => {
                 </div>
             </ol> 
             <button className='z-10 focus:no-underline' onClick={toggleAccordion}>
-                {lang.experience.button} {active ? '▲' : '▼'}
+                {active ? '▲' : '▼'} {lang.experience.button} {active ? '▲' : '▼'}
             </button>
         </section>
 
