@@ -3,7 +3,7 @@
 import { setElement } from '@/context/Actions'
 import { AppContext } from '@/context/Provider'
 import { useContext, useEffect, useRef } from 'react'
-import { useLanguage } from '../../hooks/useLanguage'
+import { useLanguage } from '@/hooks/useLanguage';
 
 export const Introduce = () => {
 

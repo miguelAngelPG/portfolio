@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef, useState } from 'react'
-import { useLanguage } from '../../hooks/useLanguage';
+import { useLanguage } from '@/hooks/useLanguage';
 import { IExperience } from '@/types';
 
 export const Experience = () => {

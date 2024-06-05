@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { FiGlobe } from 'react-icons/fi';
-import { useLanguage } from '../../hooks/useLanguage';
+import { useLanguage } from '@/hooks/useLanguage';
 
 export const LanguageSwitch = () => {
 
