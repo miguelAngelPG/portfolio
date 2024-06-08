@@ -27,12 +27,13 @@ export interface ITools {
     invert?: boolean;
 }
 
-export type Tool = 'React JS' | 'Next.js' | 'TailwindCSS' | 'TypeScript' | 'Node.js' | 'Git' | 'GitHub' | 'HTML5' | 'CSS3' | 'JavaScript' | 'Bootstrap';
+export type Tool = 'React JS' | 'Next.js' | 'TailwindCSS' | 'TypeScript' | 'Node.js' | 'Git' | 'GitHub' | 'HTML5' | 'CSS3' | 'JavaScript' | 'Bootstrap' | 'GSAP';
 
 export interface IProject {
     title: string;
     description: string;
     link: string;
     image: string;
+    code?: string;
     tools: Tool[];
 }
