@@ -12,6 +12,10 @@ export const tools: ITools[] = [
         invert: true,
     },
     {
+        tool: 'GSAP',
+        icon: '/assets/imgs/icons/gsap-greensock.svg',
+    },
+    {
         tool: 'TailwindCSS',
         icon: '/assets/imgs/icons/tailwind-css-icon.svg',
     },
@@ -52,18 +56,27 @@ export const tools: ITools[] = [
 
 export const projects: IProject[] = [
     {
+        title: 'Dismyd',
+        description: 'Web site.',
+        link: 'https://dismyd.com/',
+        image: '/assets/imgs/projects/dismyd.png',
+        tools: ['React JS', 'Next.js', 'CSS3', 'GSAP', 'JavaScript'],
+    },
+    {
         title: 'Figma Clone',
         description: 'This is a clone of the Figma website.',
-        link: 'https://figma-clone.vercel.app/',
+        link: 'clone-pro-figma.vercel.app',
         image: '/assets/imgs/projects/figma-clone.png',
-        tools: ['React JS', 'TailwindCSS', 'TypeScript']
+        tools: ['React JS', 'TailwindCSS', 'TypeScript'],
+        code: 'https://github.com/miguelAngelPG/figma-clone'
     },
     {
         title: 'Zoom Clone',
         description: 'This is a clone of the Zoom website.',
-        link: 'https://zoom-clone.vercel.app/',
-        image: '/assets/imgs/projects/figma-clone.png',
-        tools: ['Next.js', 'TailwindCSS', 'TypeScript']
+        link: 'https://zoom-clone-two-peach.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-two-peach.vercel.app%2F',
+        image: '/assets/imgs/projects/zoom-clone.png',
+        tools: ['Next.js', 'TailwindCSS', 'TypeScript'],
+        code: 'https://github.com/miguelAngelPG/zoom-clone'
     },
 
 ]
