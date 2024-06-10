@@ -5,6 +5,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { IExperience } from '@/types';
 import { TitleSection } from './TitleSection';
 import { AppContext } from '@/context/Provider';
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 
 export const ExperienceSection = () => {
     
@@ -41,8 +42,8 @@ export const ExperienceSection = () => {
                     }
                 </div>
             </ol> 
-            <button className='z-10 focus:no-underline' onClick={toggleAccordion}>
-                {active ? '▲' : '▼'} {lang.experience.button} {active ? '▲' : '▼'}
+            <button className='z-10 focus:no-underline flex flex-row items-center gap-4' onClick={toggleAccordion}>
+                {active ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />} {lang.experience.button} {active ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
             </button>
         </section>
 
@@ -52,7 +53,7 @@ export const ExperienceSection = () => {
 const TimelineItem = ({ experience, isSpanish }: {experience: IExperience, isSpanish: boolean}) => {
 
     const formatDate = (date: Date): string => { 
-        const newDate = date.toLocaleDateString( isSpanish ? 'es-MX' : 'en-US', { year: 'numeric', month: 'short' });  
+        const newDate = date.toLocaleDateString( isSpanish ? 'es-MX' : 'en-US', { year: 'numeric', month: 'long' });  
         
         return newDate.charAt(0).toUpperCase() + newDate.slice(1);
     }
@@ -85,7 +86,7 @@ const TimelineItem = ({ experience, isSpanish }: {experience: IExperience, isSpa
             <ul className="list-disc ms-6">
                 {
                     experience.description.map((desc, index) => (
-                        <li key={index} className="text-base font-normal text-gray-500 dark:text-gray-400">{desc}</li>
+                        <li key={index} className="text-base font-normal text-gray-700 dark:text-gray-400">{desc}</li>
                     ))
                 }
             </ul>
