@@ -5,6 +5,7 @@ import { Tools } from './Tools'
 import { MdLink } from 'react-icons/md'
 import { projects } from '@/types/constans.type'
 import Image from 'next/image'
+import { RiExternalLinkLine } from 'react-icons/ri'
 
 export const ProjectsSection = () => {
     return (
@@ -39,6 +40,22 @@ export const ProjectsSection = () => {
                             </article>
                         ))
                     }
+                </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5'>
+                    <a 
+                        href="https://minecraft-skin-downloader.vercel.app/" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="block group border-2 border-gray-100 hover:border-gray-200 dark:border-gray-700 dark:hover:border-gray-300/30 rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1"
+                    >
+                        <article className="relative flex flex-col justify-between w-full py-6 px-7">
+                            <h2 className="text-gray-700 dark:text-gray-200 text-lg font-bold">MC skin downloader</h2>
+                            <p className="text-slate-400 dark:text-slate-200">Minecraft players searcher.</p>
+                            <div className="absolute grid place-items-center right-3 top-3 bg-white dark:bg-gray-800 w-9 h-9 rounded-full scale-0 group-hover:scale-90 transition-transform dark:opacity-80 border-0 border-slate-100 border-indigo-100/50 dark:border-slate-200/20 shadow-sm">
+                                <RiExternalLinkLine className='text-gray-400 dark:text-gray-50 text-2xl' />
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </div>
         </section>
