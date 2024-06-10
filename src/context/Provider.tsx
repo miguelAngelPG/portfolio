@@ -112,7 +112,7 @@ const stateReducer = (
   state: IAppState,
   action: IAction
 ): typeof initialState => {
-  console.log(`vehicleReducer called: ${action.type}`)
+//   console.log(`vehicleReducer called: ${action.type}`)
 
 //   const selectedVehicle = action.vehicle
 
@@ -143,7 +143,7 @@ const AppContextProvider: FunctionComponent<{ children: ReactNode }> = ({ childr
     
     return (
         <AppContext.Provider value={value}>
-            <ThemeProvider attribute="class" defaultTheme='system' enableSystem>
+            <ThemeProvider attribute="class" defaultTheme='dark' enableSystem>
                 {children}
             </ThemeProvider>
         </AppContext.Provider>)
