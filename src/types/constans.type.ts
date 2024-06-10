@@ -65,7 +65,7 @@ export const projects: IProject[] = [
     {
         title: 'Figma Clone',
         description: 'This is a clone of the Figma website.',
-        link: 'clone-pro-figma.vercel.app',
+        link: 'https://clone-pro-figma.vercel.app',
         image: '/assets/imgs/projects/figma-clone.png',
         tools: ['React JS', 'TailwindCSS', 'TypeScript'],
         code: 'https://github.com/miguelAngelPG/figma-clone'

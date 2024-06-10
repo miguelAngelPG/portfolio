@@ -1,3 +1,4 @@
+import { projects } from '@/types/constans.type';
 import { ILanguage } from "@/types";
 
 export const en: ILanguage = {
@@ -52,7 +53,7 @@ export const en: ILanguage = {
             {
                 startDate: new Date('06-06-2019'),
                 endDate: new Date('09-09-2021'),
-                jobPosition: 'JR Web developer',
+                jobPosition: 'JR Web Developer',
                 company: 'Vlim',
                 link: 'https://www.vlim.com.mx/',
                 description: [
@@ -70,5 +71,6 @@ export const en: ILanguage = {
             },
         ],
         button: "Show more"
-    }
+    },
+
 }
