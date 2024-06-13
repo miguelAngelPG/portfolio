@@ -37,3 +37,10 @@ export interface IProject {
     code?: string;
     tools: Tool[];
 }
+
+export interface IMiniProject {
+    title: string;
+    description: string;
+    link: string;
+    tools: Tool[];
+}

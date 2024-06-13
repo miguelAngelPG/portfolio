@@ -1,5 +1,4 @@
-import { title } from "process";
-import { IProject, ITools } from ".";
+import { IMiniProject, IProject, ITools } from ".";
 
 export const tools: ITools[] = [
     {
@@ -63,20 +62,47 @@ export const projects: IProject[] = [
         tools: ['React JS', 'Next.js', 'CSS3', 'GSAP', 'JavaScript'],
     },
     {
-        title: 'Figma Clone',
-        description: 'This is a clone of the Figma website.',
-        link: 'https://clone-pro-figma.vercel.app',
-        image: '/assets/imgs/projects/figma-clone.png',
-        tools: ['React JS', 'TailwindCSS', 'TypeScript'],
-        code: 'https://github.com/miguelAngelPG/figma-clone'
-    },
-    {
         title: 'Zoom Clone',
         description: 'This is a clone of the Zoom website.',
         link: 'https://zoom-clone-two-peach.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-two-peach.vercel.app%2F',
         image: '/assets/imgs/projects/zoom-clone.png',
-        tools: ['Next.js', 'TailwindCSS', 'TypeScript'],
+        tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],
         code: 'https://github.com/miguelAngelPG/zoom-clone'
     },
+    {
+        title: 'Figma Clone',
+        description: 'This is a clone of the Figma website.',
+        link: 'https://clone-pro-figma.vercel.app',
+        image: '/assets/imgs/projects/figma-clone.png',
+        tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],
+        code: 'https://github.com/miguelAngelPG/figma-clone'
+    },
 
+]
+
+export const miniProjects: IMiniProject[] = [
+    {
+        title: '',
+        description: '',
+        link: '',
+        tools: []        
+    },
+    {
+        title: '',
+        description: '',
+        link: '',
+        tools: []        
+    },
+    {
+        title: '',
+        description: '',
+        link: '',
+        tools: []        
+    },
+    {
+        title: '',
+        description: '',
+        link: '',
+        tools: []        
+    },
 ]
