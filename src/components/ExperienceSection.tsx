@@ -27,7 +27,7 @@ export const ExperienceSection = () => {
     return (
 
         <section className={`flex items-center justify-center flex-col`}>
-            <TitleSection title={lang.experience.titleExperience} />
+            <TitleSection title={lang.experience.titleExperience} icon='brain-circuit'/>
             <ol className={`relative border-s border-gray-400 dark:border-gray-700`}>
                 <TimelineItem experience={lang.experience.experiences[0]} isSpanish={isSpanish}/>
                 <div className='overflow-y-hidden transition-all duration-1000 w-full mb-5' style={{ height: active ? ref.current?.offsetHeight : 0, opacity: active ? 1 : 0 }}>

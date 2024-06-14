@@ -10,7 +10,7 @@ import { RiExternalLinkLine } from 'react-icons/ri'
 export const ProjectsSection = () => {
     return (
         <section>
-            <TitleSection title='Projects' />
+            <TitleSection title='Projects' icon='vertical-history'/>
             <div className='flex flex-col gap-10'>
                 <div className='grid gap-10'>
                     {
@@ -18,7 +18,7 @@ export const ProjectsSection = () => {
                             <article className='grid gap-4 sm:gap-7 md:grid-cols-2 group' key={index}>
                                 <a href={link} target="_blank" rel="noreferrer" className='sm:hover:-translate-y-0.5 transition-all '>
                                     <div className='relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50'>
-                                        <Image src={image} alt={title} layout='responsive' width={16} height={9} />
+                                        <Image src={image} alt={title} className='w-auto' layout='responsive' width={16} height={9} />
                                     </div>
                                 </a>
                                 <div className='flex flex-col gap-2.5 justify-center'>
