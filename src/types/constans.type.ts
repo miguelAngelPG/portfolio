@@ -160,24 +160,24 @@ export const socialMedia: ISocialMedia[] = [
         name: 'Linkedin',
         link: 'https://www.linkedin.com/in/miguel-angel-pacheco-2641a51a9/',
         Icon: IoLogoLinkedin,
-        color: 'text-linkedin',
+        color: 'linkedin',
     },
     {
         name: 'Github',
         link: 'https://github.com/miguelAngelPG',
         Icon: IoLogoGithub,
-        color: 'text-black/80 dark:text-white/80'
+        color: 'github'
     },
     {
         name: 'Whatsapp',
         link: 'https://wa.me/+527713824016',
         Icon: IoLogoWhatsapp,
-        color: 'text-whatsapp'
+        color: 'whatsapp'
     },
     {
         name: 'Telegram',
         link: '',
         Icon: PiTelegramLogo,
-        color: 'text-telegram'
+        color: 'telegram'
     },
 ]
