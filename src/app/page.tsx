@@ -4,11 +4,12 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { SocialSection } from "@/components/SocialSection";
 import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
 
   return (
-    <main className=" bg-blue-light dark:bg-blue-dark duration-1000">
+    <div className=" bg-blue-light dark:bg-blue-dark duration-1000">
       <div className="sticky w-full top-0 z-10 backdrop-blur-md mx-auto max-w-3xl">
         <Header/>
       </div>
@@ -21,7 +22,8 @@ export default function Home() {
           <SocialSection/>
           <ContactSection/>
         </main>
+        <Footer/>
       </div>
-    </main>
+    </div>
   );
 }

@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className='h-screen'>
         <AppContextProvider>
           {children}
         </AppContextProvider>
