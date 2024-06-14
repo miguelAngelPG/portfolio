@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero"
 import { Header } from "@/components/Header"
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { SocialSection } from "@/components/SocialSection";
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
           <hr className="border-gray-300 dark:border-gray-700"/>
           <ExperienceSection/>
           <ProjectsSection/>
+          <SocialSection/>
           <section className="h-96"></section>
           <section className="h-96"></section>
           <section className="h-96"></section>
