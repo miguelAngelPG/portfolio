@@ -1,4 +1,3 @@
-import { projects } from '@/types/constans.type';
 import { ILanguage } from "@/types";
 
 export const en: ILanguage = {
@@ -72,5 +71,59 @@ export const en: ILanguage = {
         ],
         button: "Show more"
     },
-
+    projects: [
+        {
+            title: 'Dismyd',
+            description: 'Web site.',
+            link: 'https://dismyd.com/',
+            image: '/assets/imgs/projects/dismyd.png',
+            tools: ['React JS', 'Next.js', 'CSS3', 'GSAP', 'JavaScript', 'Nodemailer', 'LottieFiles', 'Swiper'],
+        },
+        {
+            title: 'Zoom Clone',
+            description: 'This is a clone of the Zoom website.',
+            link: 'https://zoom-clone-two-peach.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-two-peach.vercel.app%2F',
+            image: '/assets/imgs/projects/zoom-clone.png',
+            tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],
+            code: 'https://github.com/miguelAngelPG/zoom-clone'
+        },
+        {
+            title: 'Figma Clone',
+            description: 'This is a clone of the Figma website.',
+            link: 'https://clone-pro-figma.vercel.app',
+            image: '/assets/imgs/projects/figma-clone.png',
+            tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],
+            code: 'https://github.com/miguelAngelPG/figma-clone'
+        },
+    ],
+    miniProjects: [
+        {
+            title: 'Gasificación',
+            description: '',
+            link: '',
+            tools: ['Firebase', 'React JS', 'Redux', 'Blender', 'Three JS', 'TypeScript']        
+        },
+        {
+            title: 'Spotify',
+            description: '',
+            link: '',
+            tools: ['Recoil', 'React JS', 'Next.js', 'TailwindCSS', 'TypeScript']        
+        },
+        {
+            title: 'Figma Clone',
+            description: '',
+            link: 'https://clone-pro-figma.vercel.app',
+            tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],      
+        },
+        {
+            title: 'Video Conference App',
+            description: '',
+            link: 'https://zoom-clone-two-peach.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-two-peach.vercel.app%2F',
+            tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],        
+        },
+    ],
+    email: {
+        send: "Send me an email",
+        copy: "Copy email",
+    }
 }

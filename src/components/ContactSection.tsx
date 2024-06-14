@@ -4,8 +4,10 @@ import React from 'react'
 import { TitleSection } from './TitleSection'
 import { Tooltip } from './Tooltip'
 import Image from 'next/image'
+import { useLanguage } from '@/hooks/useLanguage'
 
 export const ContactSection = () => {
+    const { lang } = useLanguage();
     return (
         <section>
             <TitleSection title='Email' icon={'email'}/>
@@ -16,13 +18,13 @@ export const ContactSection = () => {
                         <a href='mailto:miguel.pachecog925@gmail.com' target='_blank' rel='noreferrer' className='flex bg-sky-200 dark:bg-sky-500 hover:bg-opacity-80 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg'>
                             <Image src='assets/imgs/icons/plane.svg' className='dark:invert'  width={30} height={30} alt='email'/>
                         </a>
-                        <Tooltip text={'Send me email'  } direction='top'/>
+                        <Tooltip text={lang.email.send} direction='top'/>
                     </div>
                     <div className='relative group/tooltip'>
                         <button onClick={() => navigator.clipboard.writeText('miguel.pachecog925@gmail.com')} className='flex bg-sky-200 dark:bg-sky-500 hover:bg-opacity-80 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg'>
                             <Image src='assets/imgs/icons/copy.svg' className='dark:invert' width={30} height={30} alt='email'/>
                         </button>
-                        <Tooltip text={'Copy email'  } direction='top'/>
+                        <Tooltip text={lang.email.copy} direction='top'/>
                     </div>
                 </div>
             </div>

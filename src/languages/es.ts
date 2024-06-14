@@ -70,5 +70,13 @@ export const es: ILanguage = {
             },
         ],
         button: "Ver más"
+    },
+    projects: [
+
+    ],
+    miniProjects: [],
+    email: {
+        send: "Envíame un correo",
+        copy: "Copia mi email",
     }
 }
