@@ -1,4 +1,6 @@
-import { IMiniProject, IProject, ITools } from ".";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
+import { IMiniProject, IProject, ISocialMedia, ITools } from ".";
+import { PiTelegramLogo } from "react-icons/pi";
 
 export const tools: ITools[] = [
     {
@@ -50,7 +52,53 @@ export const tools: ITools[] = [
     {
         tool: 'Bootstrap',
         icon: '/assets/imgs/icons/bootstrap-5-logo-icon.svg',
-    }
+    },
+    {
+        tool: 'Firebase',
+        icon: '/assets/imgs/icons/firebase.svg',
+    },
+    {
+        tool: 'Redux',
+        icon: '/assets/imgs/icons/redux-icon.svg',
+    },
+    {
+        tool: 'Blender',
+        icon: '/assets/imgs/icons/blender.svg',
+    },
+    {
+        tool: 'Three JS',
+        icon: '/assets/imgs/icons/threejs.svg',
+        invert: true,
+    },
+    {
+        tool: 'NextAuth',
+        icon: '/assets/imgs/icons/next-auth.svg',
+    },
+    {
+        tool: 'Nodemailer',
+        icon: '/assets/imgs/icons/node-mailer.webp',
+    },
+    {
+        tool: 'LottieFiles',
+        icon: '/assets/imgs/icons/lottiefiles.png',
+    },
+    {
+        tool: 'Swiper',
+        icon: '/assets/imgs/icons/swiper.svg',
+    },
+    {
+        tool: 'MongoDB',
+        icon: '/assets/imgs/icons/mongodb-icon.svg',
+    },
+    {
+        tool: 'Express',
+        icon: '/assets/imgs/icons/expressjs-icon.svg',
+    },
+    {
+        tool: 'Recoil',
+        icon: '/assets/imgs/icons/recoil.png',
+        invert: true,
+    },
 ]
 
 export const projects: IProject[] = [
@@ -59,7 +107,7 @@ export const projects: IProject[] = [
         description: 'Web site.',
         link: 'https://dismyd.com/',
         image: '/assets/imgs/projects/dismyd.png',
-        tools: ['React JS', 'Next.js', 'CSS3', 'GSAP', 'JavaScript'],
+        tools: ['React JS', 'Next.js', 'CSS3', 'GSAP', 'JavaScript', 'Nodemailer', 'LottieFiles', 'Swiper'],
     },
     {
         title: 'Zoom Clone',
@@ -82,27 +130,54 @@ export const projects: IProject[] = [
 
 export const miniProjects: IMiniProject[] = [
     {
-        title: '',
+        title: 'Gasificación',
         description: '',
         link: '',
-        tools: []        
+        tools: ['Firebase', 'React JS', 'Redux', 'Blender', 'Three JS', 'TypeScript']        
     },
     {
-        title: '',
+        title: 'Spotify',
         description: '',
         link: '',
-        tools: []        
+        tools: ['Recoil', 'React JS', 'Next.js', 'TailwindCSS', 'TypeScript']        
     },
     {
-        title: '',
+        title: 'Figma Clone',
         description: '',
-        link: '',
-        tools: []        
+        link: 'https://clone-pro-figma.vercel.app',
+        tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],      
     },
     {
-        title: '',
+        title: 'Video Conference App',
         description: '',
+        link: 'https://zoom-clone-two-peach.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-two-peach.vercel.app%2F',
+        tools: ['React JS', 'Next.js', 'TailwindCSS', 'TypeScript'],        
+    },
+]
+
+export const socialMedia: ISocialMedia[] = [
+    {
+        name: 'Linkedin',
+        link: 'https://www.linkedin.com/in/miguel-angel-pacheco-2641a51a9/',
+        Icon: IoLogoLinkedin,
+        color: 'text-linkedin',
+    },
+    {
+        name: 'Github',
+        link: 'https://github.com/miguelAngelPG',
+        Icon: IoLogoGithub,
+        color: 'text-black/80 dark:text-white/80'
+    },
+    {
+        name: 'Whatsapp',
+        link: 'https://wa.me/+527713824016',
+        Icon: IoLogoWhatsapp,
+        color: 'text-whatsapp'
+    },
+    {
+        name: 'Telegram',
         link: '',
-        tools: []        
+        Icon: PiTelegramLogo,
+        color: 'text-telegram'
     },
 ]
