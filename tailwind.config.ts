@@ -28,6 +28,15 @@ const config: Config = {
         'blue-dark': '#051114',
         'blue-gray-light': '#92CBD8',
         'blue-gray-dark': '#1B4E5A',
+        'linkedin': '#0284c7',
+        'whatsapp': '#25D366',
+        'telegram': '#23a1df',
+      },
+      boxShadow: {
+        'social-link': '0 0 0 2px #e5e7eb',
+        'social-link-dark': '0 0 0 2px #374151',
+        'social-link-hover': '0 0 0 4px #e5e7eb',
+        'social-link-hover-dark': '0 0 0 4px #374151',
       },
       animation: {
         slideInTop: 'slideInTop 1s ease-in-out 0.5s forwards',
