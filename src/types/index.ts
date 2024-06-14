@@ -1,3 +1,4 @@
+import { projects } from '@/types/constans.type';
 import { IconType } from "react-icons";
 
 export interface ILanguage {
@@ -11,6 +12,12 @@ export interface ILanguage {
         titleExperience: string;
         experiences: IExperience[];
         button: string;
+    }
+    projects : IProject[];
+    miniProjects: IMiniProject[];
+    email: {
+        send: string;
+        copy: string;
     }
 }
 
