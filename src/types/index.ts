@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export interface ILanguage {
     tooltipTheme: string;
     hero: {
@@ -27,7 +29,39 @@ export interface ITools {
     invert?: boolean;
 }
 
-export type Tool = 'React JS' | 'Next.js' | 'TailwindCSS' | 'TypeScript' | 'Node.js' | 'Git' | 'GitHub' | 'HTML5' | 'CSS3' | 'JavaScript' | 'Bootstrap' | 'GSAP';
+export type Tool = 
+    'React JS' | 
+    'Next.js' | 
+    'TailwindCSS' | 
+    'TypeScript' | 
+    'Node.js' | 
+    'Git' | 
+    'GitHub' | 
+    'HTML5' | 
+    'CSS3' | 
+    'JavaScript' | 
+    'Bootstrap' | 
+    'GSAP' | 
+    'Firebase' | 
+    'Redux' | 
+    'Blender' | 
+    'Three JS' | 
+    'NextAuth' | 
+    'Nodemailer' | 
+    'LottieFiles' | 
+    'Swiper' |
+    'MongoDB' |
+    'Express' |
+    'Recoil'
+    ;
+export type socialMedia = 'Linkedin' | 'Github' | 'Whatsapp' | 'Telegram'; 
+
+export interface ISocialMedia {
+    name: socialMedia;
+    link: string;
+    Icon: IconType;
+    color: string;
+}
 
 export interface IProject {
     title: string;
