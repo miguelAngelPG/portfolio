@@ -59,7 +59,8 @@ export type Tool =
     'Swiper' |
     'MongoDB' |
     'Express' |
-    'Recoil'
+    'Recoil' | 
+    'Eslint'
     ;
 export type socialMedia = 'Linkedin' | 'Github' | 'Whatsapp' | 'Telegram'; 
 
